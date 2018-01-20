@@ -57,13 +57,13 @@ public class ConfigHelper {
 			makeAllItemsDropProp.comment = LanguageRegistry.instance().getStringLocalization("config.AllItems.MakeDrop");
 			makeAllItemsDrop = makeAllItemsDropProp.getBoolean(true);
 
-			levelCostGuardianTier1Prop = cfg.get(LanguageRegistry.instance().getStringLocalization("config.Category.General"), "levelCostGuardianTier1", 1);
+			levelCostGuardianTier1Prop = cfg.get(LanguageRegistry.instance().getStringLocalization("config.Category.General"), "levelCostGuardianTier1", 0);
 			levelCostGuardianTier1Prop.comment = LanguageRegistry.instance().getStringLocalization("config.GuardianTier1.LevelRequirement").replace("%1", LanguageRegistry.instance().getStringLocalization("item.guardianTier0.name"));
-			levelCostGuardianTier1 = levelCostGuardianTier1Prop.getInt(1);
+			levelCostGuardianTier1 = levelCostGuardianTier1Prop.getInt(0);
 
-			levelCostBoundMapTier1Prop = cfg.get(LanguageRegistry.instance().getStringLocalization("config.Category.General"), "levelCostBoundMapTier1", 10);
+			levelCostBoundMapTier1Prop = cfg.get(LanguageRegistry.instance().getStringLocalization("config.Category.General"), "levelCostBoundMapTier1", 0);
 			levelCostBoundMapTier1Prop.comment = LanguageRegistry.instance().getStringLocalization("config.BoundMapTier1.LevelRequirement").replace("%1", LanguageRegistry.instance().getStringLocalization("item.boundMapTier0.name"));
-			levelCostBoundMapTier1 = levelCostBoundMapTier1Prop.getInt(10);
+			levelCostBoundMapTier1 = levelCostBoundMapTier1Prop.getInt(0);
 
 			requireGuardianIdolProp = cfg.get(LanguageRegistry.instance().getStringLocalization("config.Category.General"), "requireGuardianIdol", true);
 			requireGuardianIdolProp.comment = LanguageRegistry.instance().getStringLocalization("config.GuardianIdol.Requirement").replace("%1", LanguageRegistry.instance().getStringLocalization("item.guardianTier0.name"));
